@@ -3,16 +3,27 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CurrentWeatherComponent } from './current-weather/current-weather.component';
+import {WeatherService} from './weather/weather.service';
+import {HttpClientModule} from '@angular/common/http';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import {PostModule} from './post/post.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CurrentWeatherComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    PostModule
   ],
-  providers: [],
+  providers: [WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,4 @@
-# LocalWeatherApp
+# [LocalWeatherApp](https://marynakontar.github.io/local-weather-app/weather)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
 
